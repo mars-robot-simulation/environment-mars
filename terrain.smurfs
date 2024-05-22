@@ -2,7 +2,7 @@ smurfs:
  ### Moon Surface
   - file: heightmap.yml
   - file: rocks.yml
-  - file: stones.yml
+#  - file: stones.yml
 #  - file: rocks2.yml
 
 environment:
