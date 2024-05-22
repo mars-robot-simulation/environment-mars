@@ -23,5 +23,5 @@ physics:
     erp: 0.8
 
 plugins:
-  - particle_system
-  - SkyDomePlugin
+  - mars_particle_system
+  - mars_skydome
