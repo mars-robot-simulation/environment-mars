@@ -1,0 +1,102 @@
+nodelist:
+  - name: cave
+    index: 1
+    origname: cave
+    filename: meshes/obj/cave.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: 38.477, y: -25.57, z: 1.3665}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 37.3, y: 37.7, z: 9.74}
+  - name: rock1
+    index: 2
+    origname: rock1
+    filename: meshes/obj/rock1.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: 32.34, y: -41.142, z: 5.2994}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 45.9, y: 59.4, z: 17.3}
+  - name: rock2
+    index: 3
+    origname: rock2
+    filename: meshes/obj/rock2.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: 79.009, y: -144.29, z: 7.1662}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 62.9, y: 38.2, z: 16.9}
+
+  - name: rock3
+    index: 4
+    origname: rock3
+    filename: meshes/obj/rock3.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: -5.6932, y: 171.4, z: 16.535}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 79.9, y: 71.5, z: 22.5}
+
+  - name: rock4
+    index: 5
+    origname: rock4
+    filename: meshes/obj/rock4.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: -70.76, y: 155.79, z: 20.574}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 89.9, y: 43.7, z: 23.9}
+
+  - name: rock5
+    index: 6
+    origname: rock5
+    filename: meshes/obj/rock5.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: -174.16, y: -252.67, z: 22.756}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 276, y: 193, z: 56}
+
+  - name: rock6
+    index: 7
+    origname: rock6
+    filename: meshes/obj/rock6.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: -297.34, y: -60.25, z: 22.756}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 116, y: 285, z: 56}
+
+materiallist:
+  - id: 1
+    name: rocks
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.0, g: 0.0, b: 0.0}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    textures:
+      - {name: diffuseMap, file: textures/Rock051_1K-JPG_Color_mars.jpg, filter=0}
+      - {name: normalMap, file: textures/Rock051_1K-JPG_NormalGL.jpg}
+      - {name: diffuseMap2, file: textures/Dirt06_diffuse_mars.jpg, unit: 9, filter=0}
+    shader:
+     provider: DRockGraph
+     vertex: shader/vertex_shader.yml
+     fragment: shader/rock_fragment_shader.yml

@@ -1,0 +1,225 @@
+domain: SHADER
+name: fragmentShader
+type: vertex
+versions:
+  - name: v0.1
+    shaderData:
+      data: "gui:\n  layouts:\n    frag_layout:\n      diffuseMap:\n        y: 304\n        x: 337\n      decompose_vec42:\n        x: 1036\n        y: 612\n      ramp2:\n        x: 919\n        y: 349\n      modelHeight:\n        x: 724\n        y: 303\n      ramp1:\n        y: 86\n        x: 792\n      math_float1:\n        y: -8\n        x: 959\n      decompose_vec31:\n        y: 44\n        x: 263\n      math_float2:\n        y: -175\n        x: 521\n      length_vec31:\n        x: 605\n        y: 35\n      fragOut1:\n        y: 464\n        x: 1771\n      compose_vec21:\n        x: 303\n        y: 536\n      math_float3:\n        x: 1143\n        y: 271\n      decompose_vec43:\n        x: 143\n        y: 551\n      gl_TexCoord[0]:\n        x: 0\n        y: 491\n      compose_vec31:\n        y: 30\n        x: 444\n      positionVarying:\n        y: -164\n        x: 95\n      eyeVec:\n        x: 113\n        y: 22\n      math_vec21:\n        y: 532\n        x: 471\n      view:\n        x: -1928.06\n        scale: 2.10074\n        y: -262.372\n      sample2D1:\n        x: 797\n        y: 560\n      decompose_vec41:\n        y: -172\n        x: 316\n      pixellight_frag1:\n        x: 1555\n        y: 497\n      compose_vec41:\n        x: 1325\n        y: 578\n    layout:\n      fragOut1:\n        x: 1278\n        y: 459\n      pixellight_frag1:\n        x: 1095\n        y: 445\n      sample2D1:\n        x: 504\n        y: 421\n      diffuseMap:\n        x: 247\n        y: 392\n      gl_TexCoord[0]:\n        x: 200\n        y: 533\n      modelHeight:\n        x: 595\n        y: 287\n      ramp2:\n        x: 747\n        y: 339\n      mix_vec41:\n        x: 882\n        y: 489\n      vec4_xy1:\n        x: 354\n        y: 499\n      normalmap_frag1:\n        x: 849\n        y: 623\n      sample2D2:\n        x: 713\n        y: 676\n      normalVarying:\n        x: 712\n        y: 525\n      normalMap:\n        x: 457\n        y: 695\n      view:\n        scale: 1.70749\n        x: -961.942\n        y: -475.606\n  defaultLayout: layout\n"
+    maturity: INPROGRESS
+    date: 2020-04-28T21:29:18
+    components:
+      nodes:
+        - name: fragOut1
+          model:
+            domain: SHADER
+            version: v1
+            name: fragOut
+        - name: pixellight_frag1
+          model:
+            domain: SHADER
+            version: v1
+            name: pixellight_frag
+        - name: sample2D1
+          model:
+            domain: SHADER
+            version: v1
+            name: sample2D
+        - name: diffuseMap
+          model:
+            domain: SHADER
+            version: v1
+            name: sampler2D
+        - name: gl_TexCoord[0]
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4
+        - name: modelHeight
+          model:
+            domain: SHADER
+            version: v1
+            name: float
+        - name: ramp2
+          model:
+            domain: SHADER
+            version: v1
+            name: ramp
+        - name: mix_vec41
+          model:
+            domain: SHADER
+            version: v1
+            name: mix_vec4
+        - name: vec4_xy1
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4_xy
+        - name: normalmap_frag1
+          model:
+            domain: SHADER
+            version: v1
+            name: normalmap_frag
+        - name: sample2D2
+          model:
+            domain: SHADER
+            version: v1
+            name: sample2D
+        - name: normalVarying
+          model:
+            domain: SHADER
+            version: v1
+            name: vec3
+        - name: normalMap
+          model:
+            domain: SHADER
+            version: v1
+            name: sampler2D
+      configuration:
+        nodes:
+          - name: pixellight_frag1
+            data: "data:\n  inputs:\n    baseColor: vec4(1,1,1,1)\n    normal: vec3(0,0,1)\n"
+          - name: diffuseMap
+            data: "data:\n  type: uniform\n"
+          - name: gl_TexCoord[0]
+            data: "data:\n  type: buildin\n"
+          - name: modelHeight
+            data: "data:\n  type: varying\n"
+          - name: ramp2
+            data: "data:\n  inputs:\n    end: 0.05\n    offset: 0\n    in1: 0.0\n    scale: 1\n    start: -0.01\n"
+          - name: mix_vec41
+            data: "data:\n  inputs:\n    fac: 0.0\n    vector_b: vec4(0.0,0.0,0.0,1)\n    vector_a: vec4(0,0,0,1)\n"
+          - name: normalVarying
+            data: "type: uniform\n"
+          - name: normalMap
+            data: "data:\n  type: uniform\n"
+      edges:
+        - from:
+            name: pixellight_frag1
+            interface: shadedColor
+            domain: SHADER
+          to:
+            name: fragOut1
+            interface: col
+            domain: SHADER
+          data: "name: 17\nignore_for_sort: 0\ndomain: shader\ndataType: vec4\ndecouple: false\nweight: 1\nsmooth: true\n"
+          name: 17
+        - from:
+            name: diffuseMap
+            interface: output
+            domain: SHADER
+          to:
+            name: sample2D1
+            interface: texture
+            domain: SHADER
+          data: "name: 10\nsmooth: true\ndataType: sampler2D\nweight: 1\ndomain: shader\ndecouple: false\nignore_for_sort: 0\n"
+          name: 10
+        - from:
+            name: sample2D1
+            interface: color
+            domain: SHADER
+          to:
+            name: mix_vec41
+            interface: vector_b
+            domain: SHADER
+          data: "name: 30\nsmooth: true\nweight: 1\ndomain: shader\ndecouple: false\nignore_for_sort: 0\ndataType: vec4\n"
+          name: 30
+        - from:
+            name: ramp2
+            interface: out1
+            domain: SHADER
+          to:
+            name: mix_vec41
+            interface: fac
+            domain: SHADER
+          data: "name: 31\ndataType: float\nignore_for_sort: 0\ndecouple: false\nsmooth: true\nweight: 1\ndomain: shader\n"
+          name: 31
+        - from:
+            name: mix_vec41
+            interface: vector
+            domain: SHADER
+          to:
+            name: pixellight_frag1
+            interface: baseColor
+            domain: SHADER
+          data: "name: 26\ndomain: shader\ndecouple: false\ndataType: vec4\nignore_for_sort: 0\nsmooth: true\nweight: 1\n"
+          name: 26
+        - from:
+            name: gl_TexCoord[0]
+            interface: output
+            domain: SHADER
+          to:
+            name: vec4_xy1
+            interface: v_in
+            domain: SHADER
+          data: "name: 27\nsmooth: true\ndomain: shader\nweight: 1\nignore_for_sort: 0\ndataType: vec4\ndecouple: false\n"
+          name: 27
+        - from:
+            name: vec4_xy1
+            interface: v_out
+            domain: SHADER
+          to:
+            name: sample2D1
+            interface: texCoord
+            domain: SHADER
+          data: "name: 29\ndataType: vec2\ndecouple: false\nignore_for_sort: 0\ndomain: shader\nsmooth: true\nweight: 1\n"
+          name: 29
+        - from:
+            name: sample2D2
+            interface: color
+            domain: SHADER
+          to:
+            name: normalmap_frag1
+            interface: nt
+            domain: SHADER
+          data: "name: 23\ndataType: vec4\nignore_for_sort: 0\ndomain: shader\nweight: 1\nsmooth: true\ndecouple: false\n"
+          name: 23
+        - from:
+            name: normalVarying
+            interface: output
+            domain: SHADER
+          to:
+            name: normalmap_frag1
+            interface: n
+            domain: SHADER
+          data: "name: 24\ndataType: vec3\nignore_for_sort: 0\nsmooth: true\ndomain: shader\nweight: 1\ndecouple: false\n"
+          name: 24
+        - from:
+            name: normalMap
+            interface: output
+            domain: SHADER
+          to:
+            name: sample2D2
+            interface: texture
+            domain: SHADER
+          data: "name: 11\ndomain: shader\ndataType: sampler2D\nignore_for_sort: 0\nweight: 1\nsmooth: true\ndecouple: false\n"
+          name: 11
+        - from:
+            name: normalmap_frag1
+            interface: n
+            domain: SHADER
+          to:
+            name: pixellight_frag1
+            interface: normal
+            domain: SHADER
+          data: "name: 33\nignore_for_sort: 0\ndecouple: false\nweight: 1\ndataType: vec3\ndomain: shader\nsmooth: true\n"
+          name: 33
+        - from:
+            name: vec4_xy1
+            interface: v_out
+            domain: SHADER
+          to:
+            name: sample2D2
+            interface: texCoord
+            domain: SHADER
+          data: "name: 34\ndomain: shader\ndataType: vec2\ndecouple: false\nignore_for_sort: 0\nsmooth: true\nweight: 1\n"
+          name: 34
+        - from:
+            name: modelHeight
+            interface: output
+            domain: SHADER
+          to:
+            name: ramp2
+            interface: in1
+            domain: SHADER
+          data: "dataType: float\ndomain: shader\nsmooth: true\nweight: 1\ndecouple: false\nignore_for_sort: 0\n"
+          name: 19

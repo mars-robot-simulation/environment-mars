@@ -1,0 +1,774 @@
+domain: " SHADER"
+name: vertexShader_particle
+type: vertex
+versions:
+  - name: v0.1
+    " shaderData":
+      data: "description:\n  nodes:\n    - pos:\n        y: 471\n        x: -307\n      id: 40\n      name: DES1\n      font_size: 15\n      NodeClass: GUINode\n      type: DES\n      order: 40\n      text: Height of particles\n    - font_size: 28\n      pos:\n        x: -1028\n        y: 760\n      type: DES\n      order: 41\n      text: Terrain size\n      id: 41\n      NodeClass: GUINode\n      name: DES2\ngui:\n  layouts:\n    new layout:\n      math_float3:\n        y: 852\n        x: -1539\n      decompose_vec21:\n        y: 681\n        x: -474\n      math_vec41:\n        x: 235\n        y: 470\n      vec4_xy1:\n        x: -1115\n        y: 726\n      terrain_height1:\n        y: 527\n        x: -704\n      decompose_vec41:\n        y: 407\n        x: -917\n      cosUniform:\n        y: 536\n        x: -123\n      instanceIDARB1:\n        y: 763\n        x: -1804\n      math_vec21:\n        y: 619\n        x: -872\n      normalmap_vert1:\n        x: 872\n        y: 267\n      viewPos:\n        x: 688\n        y: 580\n      sinUniform:\n        y: 565\n        x: -15\n      sample2D1:\n        y: 746\n        x: -1249\n      particleMap:\n        x: -1406\n        y: 641\n      math_floor_div1:\n        x: -1668\n        y: 713\n      compose_vec41:\n        y: 643\n        x: -255\n      worldPos:\n        y: 584\n        x: 894\n      math_vec42:\n        y: 570\n        x: 534\n      compose_vec21:\n        y: 785\n        x: -1407\n      math_vec22:\n        x: -1000\n        y: 712\n      vertexOut:\n        x: 915\n        y: 429\n      wave2d:\n        x: 123\n        y: 514\n      vec4_xy2:\n        y: 545\n        x: -971\n      math_vec43:\n        y: 484\n        x: 388\n      math_float1:\n        x: -572\n        y: 525\n      pixellight:\n        y: 532\n        x: 1017\n      math_mod1:\n        y: 842\n        x: -1664\n      view:\n        y: -387.56\n        scale: 1\n        x: 1051.85\n      math_float2:\n        y: 565\n        x: -450\n      vertexInfo1:\n        y: 346\n        x: 714\n      gl_Vertex:\n        y: 504\n        x: -1089\n      rnd_instance_offset21:\n        x: -144\n        y: 439\n      math_float4:\n        x: -1534\n        y: 695\n    layout:\n      math_float3:\n        y: 852\n        x: -1539\n      viewPos:\n        y: 580\n        x: 688\n      particleMap:\n        x: -1406\n        y: 641\n      decompose_vec21:\n        y: 670\n        x: -404\n      math_float1:\n        y: 525\n        x: -572\n      decompose_vec41:\n        y: 407\n        x: -917\n      math_float2:\n        x: -207\n        y: 541\n      terrain_height1:\n        y: 527\n        x: -704\n      math_vec21:\n        y: 619\n        x: -872\n      compose_vec21:\n        x: -1407\n        y: 785\n      compose_vec41:\n        x: -2\n        y: 630\n      gl_Vertex:\n        y: 432\n        x: -1316\n      instanceIDARB1:\n        y: 763\n        x: -1804\n      worldPos:\n        x: 894\n        y: 584\n      vertexOut:\n        x: 915\n        y: 429\n      pixellight:\n        x: 1017\n        y: 532\n      vertexInfo1:\n        y: 346\n        x: 714\n      vec4_xy2:\n        y: 545\n        x: -971\n      math_mod1:\n        y: 842\n        x: -1664\n      normalmap_vert1:\n        y: 267\n        x: 872\n      math_vec42:\n        y: 570\n        x: 534\n      sample2D1:\n        y: 746\n        x: -1249\n      math_vec22:\n        y: 712\n        x: -1000\n      math_float4:\n        y: 695\n        x: -1534\n      decompose_vec43:\n        x: -723\n        y: 832\n      decompose_vec42:\n        x: -1058\n        y: 927\n      rnd_from_input1:\n        y: 833\n        x: -861\n      ramp1:\n        y: 889\n        x: -537\n      math_float5:\n        y: 537\n        x: -383\n      ramp3:\n        y: 535\n        x: -1498\n      ramp2:\n        x: -585\n        y: 684\n      math_rotate3d1:\n        y: 386\n        x: -1332\n      DES2:\n        y: 760\n        x: -1028\n      decompose_vec31:\n        y: 842\n        x: 960\n      math_rotate3d2:\n        x: 960\n        y: 842\n      modelHeight:\n        y: 867\n        x: 960\n      compose_vec42:\n        x: 960\n        y: 842\n      vec4_xyz1:\n        y: 842\n        x: 960\n      DES1:\n        x: -307\n        y: 471\n      view:\n        x: 1385.12\n        scale: 1.68383\n        y: -741.418\n      math_vec44:\n        x: -1137\n        y: 461\n      math_floor_div1:\n        x: -1668\n        y: 713\n      vec4_xy1:\n        x: -1115\n        y: 726\n    frag_layout:\n      vertexOut:\n        x: 1022\n        y: 375\n      worldPos:\n        x: 861\n        y: 651\n      pixellight:\n        x: 1017\n        y: 532\n      viewPos:\n        x: 695\n        y: 623\n      gl_Vertex:\n        x: -1622\n        y: 339\n      vec4_xy2:\n        x: -971\n        y: 545\n      math_vec21:\n        x: -872\n        y: 619\n      terrain_height1:\n        x: -704\n        y: 527\n      decompose_vec21:\n        x: -515\n        y: 717\n      compose_vec41:\n        x: -105\n        y: 640\n      normalmap_vert1:\n        x: 971\n        y: 192\n      vertexInfo1:\n        x: 209\n        y: 380\n      decompose_vec41:\n        x: -949\n        y: 405\n      math_float1:\n        x: -572\n        y: 525\n      math_float2:\n        x: -285\n        y: 432\n      math_vec42:\n        x: 534\n        y: 570\n      math_mod1:\n        x: -1665\n        y: 846\n      instanceIDARB1:\n        x: -1804\n        y: 763\n      math_float3:\n        x: -1539\n        y: 852\n      compose_vec21:\n        x: -1407\n        y: 785\n      sample2D1:\n        x: -1249\n        y: 746\n      particleMap:\n        x: -1406\n        y: 641\n      vec4_xy1:\n        x: -1112\n        y: 664\n      math_vec22:\n        x: -1000\n        y: 712\n      math_floor_div1:\n        x: -1668\n        y: 713\n      math_float4:\n        x: -1534\n        y: 695\n      math_vec44:\n        x: -1137\n        y: 461\n      decompose_vec42:\n        x: -963\n        y: 1003\n      rnd_from_input1:\n        x: -786\n        y: 978\n      decompose_vec43:\n        x: -617\n        y: 1026\n      math_float5:\n        x: -454\n        y: 481\n      ramp1:\n        x: -359\n        y: 1178\n      ramp2:\n        x: -357\n        y: 947\n      math_rotate3d1:\n        x: -1332\n        y: 386\n      ramp3:\n        x: -1567\n        y: 189\n      math_rotate3d2:\n        x: 621\n        y: 205\n      decompose_vec31:\n        x: 335\n        y: 365\n      compose_vec42:\n        x: 491\n        y: 304\n      vec4_xyz1:\n        x: 829\n        y: 227\n      modelHeight:\n        x: -618\n        y: 260\n      DES1:\n        x: -307\n        y: 471\n      DES2:\n        x: -1028\n        y: 760\n      view:\n        scale: 2.08773\n        x: 1047.17\n        y: -895.689\n  defaultLayout: frag_layout\n"
+    maturity: INPROGRESS
+    date: 2019-08-09T15:45:22
+    components:
+      nodes:
+        - name: vertexOut
+          model:
+            domain: SHADER
+            version: v1
+            name: vertexOut
+        - name: worldPos
+          model:
+            domain: SHADER
+            version: v1
+            name: worldPos
+        - name: pixellight
+          model:
+            domain: SHADER
+            version: v1
+            name: pixellight_vert
+        - name: viewPos
+          model:
+            domain: SHADER
+            version: v1
+            name: viewPos
+        - name: gl_Vertex
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4
+        - name: vec4_xy2
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4_xy
+        - name: math_vec21
+          model:
+            domain: SHADER
+            version: v1
+            name: math_vec2
+        - name: terrain_height1
+          model:
+            domain: SHADER
+            version: v1
+            name: terrain_height
+        - name: decompose_vec21
+          model:
+            domain: SHADER
+            version: v1
+            name: decompose_vec2
+        - name: compose_vec41
+          model:
+            domain: SHADER
+            version: v1
+            name: compose_vec4
+        - name: normalmap_vert1
+          model:
+            domain: SHADER
+            version: v1
+            name: normalmap_vert
+        - name: vertexInfo1
+          model:
+            domain: SHADER
+            version: v1
+            name: vertexInfo
+        - name: decompose_vec41
+          model:
+            domain: SHADER
+            version: v1
+            name: decompose_vec4
+        - name: math_float1
+          model:
+            domain: SHADER
+            version: v1
+            name: math_float
+        - name: math_float2
+          model:
+            domain: SHADER
+            version: v1
+            name: math_float
+        - name: math_vec42
+          model:
+            domain: SHADER
+            version: v1
+            name: math_vec4
+        - name: math_mod1
+          model:
+            domain: SHADER
+            version: v1
+            name: math_mod
+        - name: instanceIDARB1
+          model:
+            domain: SHADER
+            version: v1
+            name: instanceIDARB
+        - name: math_float3
+          model:
+            domain: SHADER
+            version: v1
+            name: math_float
+        - name: compose_vec21
+          model:
+            domain: SHADER
+            version: v1
+            name: compose_vec2
+        - name: sample2D1
+          model:
+            domain: SHADER
+            version: v1
+            name: sample2D
+        - name: particleMap
+          model:
+            domain: SHADER
+            version: v1
+            name: sampler2D
+        - name: vec4_xy1
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4_xy
+        - name: math_vec22
+          model:
+            domain: SHADER
+            version: v1
+            name: math_vec2
+        - name: math_floor_div1
+          model:
+            domain: SHADER
+            version: v1
+            name: math_floor_div
+        - name: math_float4
+          model:
+            domain: SHADER
+            version: v1
+            name: math_float
+        - name: math_vec44
+          model:
+            domain: SHADER
+            version: v1
+            name: math_vec4
+        - name: decompose_vec42
+          model:
+            domain: SHADER
+            version: v1
+            name: decompose_vec4
+        - name: rnd_from_input1
+          model:
+            domain: SHADER
+            version: v1
+            name: rnd_from_input
+        - name: decompose_vec43
+          model:
+            domain: SHADER
+            version: v1
+            name: decompose_vec4
+        - name: math_float5
+          model:
+            domain: SHADER
+            version: v1
+            name: math_float
+        - name: ramp1
+          model:
+            domain: SHADER
+            version: v1
+            name: ramp
+        - name: ramp2
+          model:
+            domain: SHADER
+            version: v1
+            name: ramp
+        - name: math_rotate3d1
+          model:
+            domain: SHADER
+            version: v1
+            name: math_rotate3d
+        - name: ramp3
+          model:
+            domain: SHADER
+            version: v1
+            name: ramp
+        - name: math_rotate3d2
+          model:
+            domain: SHADER
+            version: v1
+            name: math_rotate3d
+        - name: decompose_vec31
+          model:
+            domain: SHADER
+            version: v1
+            name: decompose_vec3
+        - name: compose_vec42
+          model:
+            domain: SHADER
+            version: v1
+            name: compose_vec4
+        - name: vec4_xyz1
+          model:
+            domain: SHADER
+            version: v1
+            name: vec4_xyz
+        - name: modelHeight
+          model:
+            domain: SHADER
+            version: v1
+            name: float
+      configuration:
+        nodes:
+          - name: pixellight
+            data: "data:\n  inputs:\n    worldPos: vec4(0,0,0,0)\n    specularColor: vec4(0,0,0,0)\n"
+          - name: gl_Vertex
+            data: "type: atribute\n"
+          - name: math_vec21
+            data: "data:\n  inputs:\n    skalar: 1.0\n    vector_b: vec2(0.0, 0.0)\n    vector_a: vec2(0.0, 0.0)\n"
+          - name: terrain_height1
+            data: "inputs:\n  height: 0.0\n  xy: vec2(0,0)\n"
+          - name: decompose_vec21
+            data: "inputs:\n  vector: vec2(0,0)\n"
+          - name: compose_vec41
+            data: "data:\n  inputs:\n    w: 1.0\n    y: 0.0\n    z: 0.0\n    x: 0.0\n"
+          - name: decompose_vec41
+            data: "inputs:\n  vector: vec4(0,0,0,0)\n"
+          - name: math_float1
+            data: "data:\n  inputs:\n    value_b: 0.0\n    value_a: 6.0\n    skalar: 1.0\n"
+          - name: math_float2
+            data: "data:\n  inputs:\n    value_a: 0.0\n    value_b: 0\n    skalar: 1.0\n"
+          - name: math_vec42
+            data: "data:\n  inputs:\n    skalar: 1\n    vector_a: vec4(0,0,0,0)\n    vector_b: vec4(0,0,0,0)\n"
+          - name: math_mod1
+            data: "data:\n  inputs:\n    value_b: 10\n    value_a: 0.05\n"
+          - name: math_float3
+            data: "data:\n  inputs:\n    value_b: 0.03\n    skalar: 0.0626\n    value_a: 0.0\n"
+          - name: compose_vec21
+            data: "data:\n  inputs:\n    y: 0.0\n    x: 0.0\n"
+          - name: particleMap
+            data: "data:\n  type: uniform\n"
+          - name: math_vec22
+            data: "data:\n  inputs:\n    vector_a: vec2(0.0, 0.0)\n    vector_b: vec2(-0.5, -0.5)\n    skalar: 980\n"
+          - name: math_floor_div1
+            data: "data:\n  inputs:\n    value_b: 10.0\n    value_a: 0.0\n"
+          - name: math_float4
+            data: "data:\n  inputs:\n    skalar: 0.0625\n    value_a: 0.0\n    value_b: 0.03\n"
+          - name: math_vec44
+            data: "data:\n  inputs:\n    vector_b: vec4(0,0,0,0)\n    vector_a: vec4(0,0,0,0)\n    skalar: 1.0\n"
+          - name: decompose_vec42
+            data: "inputs:\n  vector: vec4(0,0,0,0)\n"
+          - name: rnd_from_input1
+            data: "{}\n"
+          - name: decompose_vec43
+            data: "inputs:\n  vector: vec4(0,0,0,0)\n"
+          - name: math_float5
+            data: "data:\n  inputs:\n    value_b: 0.0\n    value_a: 0.0\n    skalar: 1.0\n"
+          - name: ramp1
+            data: "data:\n  inputs:\n    in1: 0.0\n    scale: 0.2\n    end: 1.0\n    start: -1.0\n    offset: -0.1\n"
+          - name: ramp2
+            data: "data:\n  inputs:\n    scale: 1\n    start: -1\n    offset: 0.5\n    end: 1.0\n    in1: 0.0\n"
+          - name: math_rotate3d1
+            data: "data:\n  inputs:\n    gamma: 0.0\n    alpha: 0.0\n    beta: 0.0\n    vector_a: vec4(0,0,0,0)\n"
+          - name: ramp3
+            data: "data:\n  inputs:\n    scale: 6.28\n    in1: 0.0\n    start: -1.0\n    offset: 0.0\n    end: 1.0\n"
+          - name: math_rotate3d2
+            data: "data:\n  inputs:\n    beta: 0.0\n    gamma: 0.0\n    alpha: 0.0\n    vector_a: vec4(0,0,0,0)\n"
+          - name: decompose_vec31
+            data: "inputs:\n  vector: vec3(0,0,0)\n"
+          - name: compose_vec42
+            data: "data:\n  inputs:\n    z: 0.0\n    y: 0.0\n    w: 0.0\n    x: 0.0\n"
+          - name: modelHeight
+            data: "data:\n  type: varying\n"
+      edges:
+        - from:
+            name: worldPos
+            interface: worldPos
+            domain: SHADER
+          to:
+            name: pixellight
+            interface: worldPos
+            domain: SHADER
+          data: "name: 1\ndecouple: false\ndataType: vec4\nweight: 1\nsmooth: true\ndomain: shader\n"
+          name: 1
+        - from:
+            name: viewPos
+            interface: viewPos
+            domain: SHADER
+          to:
+            name: worldPos
+            interface: viewPos
+            domain: SHADER
+          data: "name: 5\nsmooth: true\ndecouple: false\ndomain: shader\ndataType: vec4\nweight: 1\n"
+          name: 5
+        - from:
+            name: viewPos
+            interface: viewPos
+            domain: SHADER
+          to:
+            name: vertexOut
+            interface: viewPos
+            domain: SHADER
+          data: "name: 6\ndecouple: false\ndataType: vec4\ndomain: shader\nsmooth: true\nweight: 1\n"
+          name: 6
+        - from:
+            name: viewPos
+            interface: viewPos
+            domain: SHADER
+          to:
+            name: pixellight
+            interface: viewPos
+            domain: SHADER
+          data: "name: 21\ndecouple: false\ndataType: vec4\nsmooth: true\nignore_for_sort: 0\ndomain: shader\nweight: 1\n"
+          name: 21
+        - from:
+            name: vec4_xy2
+            interface: v_out
+            domain: SHADER
+          to:
+            name: math_vec21
+            interface: vector_b
+            domain: SHADER
+          data: "name: 18\nsmooth: true\ndomain: shader\ndecouple: false\ndataType: vec2\nweight: 1\nignore_for_sort: 0\n"
+          name: 18
+        - from:
+            name: math_vec21
+            interface: vector
+            domain: SHADER
+          to:
+            name: terrain_height1
+            interface: xy
+            domain: SHADER
+          data: "name: 19\nsmooth: true\nweight: 1\ndecouple: false\ndataType: vec2\ndomain: shader\nignore_for_sort: 0\n"
+          name: 19
+        - from:
+            name: math_vec21
+            interface: vector
+            domain: SHADER
+          to:
+            name: decompose_vec21
+            interface: vector
+            domain: SHADER
+          data: "name: 20\ndecouple: false\nsmooth: true\nignore_for_sort: 0\ndomain: shader\ndataType: vec2\nweight: 1\n"
+          name: 20
+        - from:
+            name: decompose_vec21
+            interface: x
+            domain: SHADER
+          to:
+            name: compose_vec41
+            interface: x
+            domain: SHADER
+          data: "name: 21\nweight: 1\nignore_for_sort: 0\nsmooth: true\ndomain: shader\ndecouple: false\ndataType: float\n"
+          name: 21
+        - from:
+            name: decompose_vec21
+            interface: y
+            domain: SHADER
+          to:
+            name: compose_vec41
+            interface: y
+            domain: SHADER
+          data: "name: 22\ndomain: shader\nignore_for_sort: 0\nsmooth: true\ndataType: float\nweight: 1\ndecouple: false\n"
+          name: 22
+        - from:
+            name: decompose_vec41
+            interface: z
+            domain: SHADER
+          to:
+            name: math_float1
+            interface: value_b
+            domain: SHADER
+          data: "name: 25\nweight: 1\ndomain: shader\nignore_for_sort: 0\ndataType: float\ndecouple: false\nsmooth: true\n"
+          name: 25
+        - from:
+            name: compose_vec41
+            interface: vector
+            domain: SHADER
+          to:
+            name: math_vec42
+            interface: vector_a
+            domain: SHADER
+          data: "name: 24\ndecouple: false\nweight: 1\nsmooth: true\ndomain: shader\nignore_for_sort: 0\ndataType: vec4\n"
+          name: 24
+        - from:
+            name: math_vec42
+            interface: vector
+            domain: SHADER
+          to:
+            name: viewPos
+            interface: modelPos
+            domain: SHADER
+          data: "name: 26\nsmooth: true\ndomain: shader\nignore_for_sort: 0\ndecouple: false\ndataType: vec4\nweight: 1\n"
+          name: 26
+        - from:
+            name: math_vec42
+            interface: vector
+            domain: SHADER
+          to:
+            name: vertexOut
+            interface: modelPos
+            domain: SHADER
+          data: "name: 27\ndomain: shader\ndataType: vec4\ndecouple: false\nweight: 1\nsmooth: true\nignore_for_sort: 0\n"
+          name: 27
+        - from:
+            name: instanceIDARB1
+            interface: id
+            domain: SHADER
+          to:
+            name: math_mod1
+            interface: value_a
+            domain: SHADER
+          data: "name: 31\nsmooth: true\ndomain: shader\nignore_for_sort: 0\ndecouple: false\ndataType: float\nweight: 1\n"
+          name: 31
+        - from:
+            name: math_mod1
+            interface: value
+            domain: SHADER
+          to:
+            name: math_float3
+            interface: value_a
+            domain: SHADER
+          data: "name: 32\nsmooth: true\ndomain: shader\ndataType: float\ndecouple: false\nignore_for_sort: 0\nweight: 1\n"
+          name: 32
+        - from:
+            name: math_float3
+            interface: value
+            domain: SHADER
+          to:
+            name: compose_vec21
+            interface: x
+            domain: SHADER
+          data: "name: 35\ndomain: shader\ndataType: float\nsmooth: true\ndecouple: false\nweight: 1\nignore_for_sort: 0\n"
+          name: 35
+        - from:
+            name: compose_vec21
+            interface: vector
+            domain: SHADER
+          to:
+            name: sample2D1
+            interface: texCoord
+            domain: SHADER
+          data: "name: 37\nweight: 1\ndataType: vec2\ndecouple: false\ndomain: shader\nignore_for_sort: 0\nsmooth: true\n"
+          name: 37
+        - from:
+            name: particleMap
+            interface: output
+            domain: SHADER
+          to:
+            name: sample2D1
+            interface: texture
+            domain: SHADER
+          data: "name: 38\ndomain: shader\nsmooth: true\nignore_for_sort: 0\ndecouple: false\nweight: 1\ndataType: sampler2D\n"
+          name: 38
+        - from:
+            name: sample2D1
+            interface: color
+            domain: SHADER
+          to:
+            name: vec4_xy1
+            interface: v_in
+            domain: SHADER
+          data: "name: 39\ndomain: shader\ndecouple: false\nsmooth: true\nignore_for_sort: 0\ndataType: vec4\nweight: 1\n"
+          name: 39
+        - from:
+            name: vec4_xy1
+            interface: v_out
+            domain: SHADER
+          to:
+            name: math_vec22
+            interface: vector_a
+            domain: SHADER
+          data: "name: 42\ndataType: vec2\nignore_for_sort: 0\nsmooth: true\ndecouple: false\ndomain: shader\nweight: 1\n"
+          name: 42
+        - from:
+            name: math_vec22
+            interface: vector
+            domain: SHADER
+          to:
+            name: math_vec21
+            interface: vector_a
+            domain: SHADER
+          data: "name: 43\nweight: 1\ndecouple: false\nignore_for_sort: 0\ndataType: vec2\ndomain: shader\nsmooth: true\n"
+          name: 43
+        - from:
+            name: instanceIDARB1
+            interface: id
+            domain: SHADER
+          to:
+            name: math_floor_div1
+            interface: value_a
+            domain: SHADER
+          data: "name: 39\ndomain: shader\ndecouple: false\nsmooth: true\nignore_for_sort: 0\nweight: 1\ndataType: float\n"
+          name: 39
+        - from:
+            name: math_floor_div1
+            interface: value
+            domain: SHADER
+          to:
+            name: math_float4
+            interface: value_a
+            domain: SHADER
+          data: "name: 40\nweight: 1\ndataType: float\nsmooth: true\nignore_for_sort: 0\ndomain: shader\ndecouple: false\n"
+          name: 40
+        - from:
+            name: math_float4
+            interface: value
+            domain: SHADER
+          to:
+            name: compose_vec21
+            interface: y
+            domain: SHADER
+          data: "name: 41\nignore_for_sort: 0\ndecouple: false\nweight: 1\ndomain: shader\nsmooth: true\ndataType: float\n"
+          name: 41
+        - from:
+            name: math_vec44
+            interface: vector
+            domain: SHADER
+          to:
+            name: vec4_xy2
+            interface: v_in
+            domain: SHADER
+          data: "name: 41\nweight: 1\ndomain: shader\nsmooth: true\nignore_for_sort: 0\ndataType: vec4\ndecouple: false\n"
+          name: 41
+        - from:
+            name: math_vec44
+            interface: vector
+            domain: SHADER
+          to:
+            name: decompose_vec41
+            interface: vector
+            domain: SHADER
+          data: "name: 42\nignore_for_sort: 0\nsmooth: true\ndecouple: false\nweight: 1\ndomain: shader\ndataType: vec4\n"
+          name: 42
+        - from:
+            name: sample2D1
+            interface: color
+            domain: SHADER
+          to:
+            name: decompose_vec42
+            interface: vector
+            domain: SHADER
+          data: "name: 37\ndecouple: false\ndomain: shader\ndataType: vec4\nweight: 1\nignore_for_sort: 0\nsmooth: true\n"
+          name: 37
+        - from:
+            name: decompose_vec42
+            interface: z
+            domain: SHADER
+          to:
+            name: rnd_from_input1
+            interface: r
+            domain: SHADER
+          data: "name: 39\ndataType: float\nignore_for_sort: 0\ndecouple: false\nsmooth: true\ndomain: shader\nweight: 1\n"
+          name: 39
+        - from:
+            name: rnd_from_input1
+            interface: v_rnd
+            domain: SHADER
+          to:
+            name: decompose_vec43
+            interface: vector
+            domain: SHADER
+          data: "name: 40\ndecouple: false\nweight: 1\ndataType: vec4\nsmooth: true\nignore_for_sort: 0\ndomain: shader\n"
+          name: 40
+        - from:
+            name: math_float1
+            interface: value
+            domain: SHADER
+          to:
+            name: math_float5
+            interface: value_a
+            domain: SHADER
+          data: "name: 41\nsmooth: true\ndecouple: false\nignore_for_sort: 0\nweight: 1\ndomain: shader\ndataType: float\n"
+          name: 41
+        - from:
+            name: math_float5
+            interface: value
+            domain: SHADER
+          to:
+            name: math_float2
+            interface: value_a
+            domain: SHADER
+          data: "name: 42\nignore_for_sort: 0\ndomain: shader\ndecouple: false\ndataType: float\nsmooth: true\nweight: 1\n"
+          name: 42
+        - from:
+            name: decompose_vec43
+            interface: x
+            domain: SHADER
+          to:
+            name: ramp1
+            interface: in1
+            domain: SHADER
+          data: "name: 44\nsmooth: true\ndataType: float\nweight: 1\ndecouple: false\ndomain: shader\nignore_for_sort: 0\n"
+          name: 44
+        - from:
+            name: decompose_vec43
+            interface: y
+            domain: SHADER
+          to:
+            name: ramp2
+            interface: in1
+            domain: SHADER
+          data: "name: 46\ndecouple: false\nsmooth: true\ndataType: float\nignore_for_sort: 0\nweight: 1\ndomain: shader\n"
+          name: 46
+        - from:
+            name: gl_Vertex
+            interface: output
+            domain: SHADER
+          to:
+            name: math_rotate3d1
+            interface: v
+            domain: SHADER
+          data: "name: 41\nweight: 1\ndataType: vec4\ndecouple: false\nignore_for_sort: 0\ndomain: shader\nsmooth: true\n"
+          name: 41
+        - from:
+            name: math_rotate3d1
+            interface: o
+            domain: SHADER
+          to:
+            name: math_vec44
+            interface: vector_a
+            domain: SHADER
+          data: "name: 44\nsmooth: true\ndecouple: false\nweight: 1\nignore_for_sort: 0\ndataType: vec4\ndomain: shader\n"
+          name: 44
+        - from:
+            name: ramp3
+            interface: out1
+            domain: SHADER
+          to:
+            name: math_rotate3d2
+            interface: gamma
+            domain: SHADER
+          data: "name: 48\nignore_for_sort: 0\nsmooth: true\ndecouple: false\ndataType: float\ndomain: shader\nweight: 1\n"
+          name: 48
+        - from:
+            name: vertexInfo1
+            interface: normal
+            domain: SHADER
+          to:
+            name: decompose_vec31
+            interface: vector
+            domain: SHADER
+          data: "name: 49\nweight: 1\ndecouple: false\nignore_for_sort: 0\ndataType: vec3\nsmooth: true\ndomain: shader\n"
+          name: 49
+        - from:
+            name: decompose_vec31
+            interface: x
+            domain: SHADER
+          to:
+            name: compose_vec42
+            interface: x
+            domain: SHADER
+          data: "name: 50\ndecouple: false\ndataType: float\nsmooth: true\nweight: 1\nignore_for_sort: 0\ndomain: shader\n"
+          name: 50
+        - from:
+            name: decompose_vec31
+            interface: y
+            domain: SHADER
+          to:
+            name: compose_vec42
+            interface: y
+            domain: SHADER
+          data: "name: 51\nweight: 1\ndataType: float\ndomain: shader\ndecouple: false\nignore_for_sort: 0\nsmooth: true\n"
+          name: 51
+        - from:
+            name: decompose_vec31
+            interface: z
+            domain: SHADER
+          to:
+            name: compose_vec42
+            interface: z
+            domain: SHADER
+          data: "name: 52\nweight: 1\ndecouple: false\nignore_for_sort: 0\ndomain: shader\ndataType: float\nsmooth: true\n"
+          name: 52
+        - from:
+            name: compose_vec42
+            interface: vector
+            domain: SHADER
+          to:
+            name: math_rotate3d2
+            interface: v
+            domain: SHADER
+          data: "name: 53\nweight: 1\ndataType: vec4\ndomain: shader\nignore_for_sort: 0\nsmooth: true\ndecouple: false\n"
+          name: 53
+        - from:
+            name: math_rotate3d2
+            interface: o
+            domain: SHADER
+          to:
+            name: vec4_xyz1
+            interface: v_in
+            domain: SHADER
+          data: "name: 54\nweight: 1\nsmooth: true\ndecouple: false\nignore_for_sort: 0\ndomain: shader\ndataType: vec4\n"
+          name: 54
+        - from:
+            name: vec4_xyz1
+            interface: v_out
+            domain: SHADER
+          to:
+            name: normalmap_vert1
+            interface: n
+            domain: SHADER
+          data: "name: 55\ndataType: vec3\nweight: 1\nsmooth: true\ndecouple: false\nignore_for_sort: 0\ndomain: shader\n"
+          name: 55
+        - from:
+            name: vec4_xyz1
+            interface: v_out
+            domain: SHADER
+          to:
+            name: vertexOut
+            interface: normalVarying
+            domain: SHADER
+          data: "name: 56\nsmooth: true\ndecouple: false\ndataType: vec3\nignore_for_sort: 0\nweight: 1\ndomain: shader\n"
+          name: 56
+        - from:
+            name: decompose_vec43
+            interface: w
+            domain: SHADER
+          to:
+            name: ramp3
+            interface: in1
+            domain: SHADER
+          data: "name: 55\ndecouple: true\nweight: 1\nignore_for_sort: 0\ndataType: float\ndomain: shader\nsmooth: true\n"
+          name: 55
+        - from:
+            name: terrain_height1
+            interface: height
+            domain: SHADER
+          to:
+            name: math_float1
+            interface: value_a
+            domain: SHADER
+          data: "name: 61\nignore_for_sort: 0\ndataType: float\nsmooth: true\ndecouple: false\ndomain: shader\nweight: 1\n"
+          name: 61
+        - from:
+            name: math_float2
+            interface: value
+            domain: SHADER
+          to:
+            name: compose_vec41
+            interface: z
+            domain: SHADER
+          data: "name: 62\ndataType: float\nweight: 1\ndomain: shader\nsmooth: true\ndecouple: false\nignore_for_sort: 0\n"
+          name: 62
+        - from:
+            name: ramp3
+            interface: out1
+            domain: SHADER
+          to:
+            name: math_rotate3d1
+            interface: gamma
+            domain: SHADER
+          data: "name: 70\ndomain: shader\nweight: 1\nignore_for_sort: 0\ndecouple: false\nsmooth: true\ndataType: float\n"
+          name: 70
+        - from:
+            name: ramp2
+            interface: out1
+            domain: SHADER
+          to:
+            name: math_vec44
+            interface: skalar
+            domain: SHADER
+          data: "name: 71\ndomain: shader\nsmooth: true\ndecouple: true\nweight: 1\ndataType: float\nignore_for_sort: 0\n"
+          name: 71
+        - from:
+            name: decompose_vec41
+            interface: z
+            domain: SHADER
+          to:
+            name: modelHeight
+            interface: export
+            domain: SHADER
+          data: "name: 66\nweight: 1\nignore_for_sort: 0\nsmooth: true\ndomain: shader\ndecouple: false\ndataType: float\n"
+          name: 66

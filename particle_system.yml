@@ -1,0 +1,16 @@
+particles:
+  - materialName: stones
+    textureName: particleMap
+    positionFile: ps3/particles.txt
+    #numRandomParticles: 88
+    seed: 258
+    limits:
+      alpha: 0.1
+      beta: 0.1
+      gamma: 1.0
+      scale: 0.5
+    physics:
+      type: mesh
+      size: {x: 1.31249, y: 1.78544, z: 0.91458}
+      name: rock_1
+      path: ps3/stone2.obj

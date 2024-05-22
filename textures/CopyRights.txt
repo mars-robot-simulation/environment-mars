@@ -1,0 +1,5 @@
+All texures are published under the `CC0 License`. Most textures are modified (croped, recolored, scaled).
+
+The source of used files:
+
+https://publicdomaintextures.com

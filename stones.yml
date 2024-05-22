@@ -1,0 +1,44 @@
+nodelist:
+  - name: stones
+    index: 1
+    origname: rock_1
+    filename: ps3/stone2.obj
+    noPhysical: true
+    material_id: 1
+    shadow_id: 1
+    position: {x: 0.0, y: 0.0, z: 0.0}
+
+    # scaled size in MARS
+    extend: {x: 1000, y: 1000, z: 50}
+
+materiallist:
+  - id: 1
+    name: stones
+    specularColor: {a: 1.0, r: 0.5, g: 0.5, b: 0.5}
+
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.0, g: 0.0, b: 0.0}
+
+    shininess: 128
+    tex_scale: 0.001
+    scaleZ: 44.8
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    printShader: true
+    instancing: true
+    numInstances: 88
+    renderBin: 2
+    instancesWidth: 1000
+    instancesHeight: 44.8
+    instancesLength: 1000
+    particle_16bit: true
+    textures:
+      - {name: terrainMap, file: textures/heightmap.png, unit: 0}
+      - {name: diffuseMap, file: ps3/stone_diffuse.jpg, unit: 9, filter=0}
+      - {name: normalMap, file: ps3/stone_normal.jpg, unit: 8}
+      - {name: particleMap, file: ps3/particle.png, unit: 10}
+    shader:
+     provider: DRockGraph
+     vertex: ps3/vertexShader_particle_new.yml
+     fragment: ps3/fragmentShader.yml

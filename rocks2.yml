@@ -1,0 +1,183 @@
+nodelist:
+  - name: rock15
+    index: 15
+    origname: rock15
+    filename: meshes/obj/rock15.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 1
+    position: {x: 33.451, y: 25.33, z: -0.9632}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 8.55, y: 4.62, z: 3.47}
+
+  - name: rock16
+    index: 16
+    origname: rock16
+    filename: meshes/obj/rock16.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 16
+    position: {x: 30.439, y: -1.426, z: -2.0454}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 5.98, y: 5.56, z: 2.6}
+
+  - name: rock18
+    index: 18
+    origname: rock18
+    filename: meshes/obj/rock18.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 18
+    position: {x: 48.821, y: 4.4781, z: -0.9553}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 5.97, y: 4.09, z: 2.98}
+
+  - name: rock19
+    index: 19
+    origname: rock19
+    filename: meshes/obj/rock19.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 19
+    position: {x: 42.368, y: 12.162, z: -1.4635}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 6.07, y: 5.44, z: 4.12}
+
+  - name: rock20
+    index: 20
+    origname: rock20
+    filename: meshes/obj/rock20.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 20
+    position: {x: 48.74, y: -7.011, z: -0.39434}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 5.94, y: 5.04, z: 3.18}
+
+  - name: rock21
+    index: 1
+    origname: rock21
+    filename: meshes/obj/rock21.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 2
+    position: {x: 27.584, y: 11.919, z: -1.0981}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 4.94, y: 4.18, z: 3.7}
+  - name: rock17
+    index: 1
+    origname: rock17
+    filename: meshes/obj/rock17.obj
+    noPhysical: false
+    physicmode: mesh
+    material_id: 17
+    position: {x: 22.543, y: 3.4116, z: -0.55577}
+    movable: false
+    # scaled size in MARS
+    extend: {x: 5.43, y: 3.6, z: 3.11}
+
+materiallist:
+  - id: 1
+    name: rock15
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_15_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_15_normal.jpg
+    exists: true
+
+  - id: 16
+    name: rock16
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_16_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_16_normal.jpg
+    exists: true
+
+  - id: 18
+    name: rock18
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_18_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_18_normal.jpg
+    exists: true
+
+  - id: 19
+    name: rock19
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_19_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_19_normal.jpg
+    exists: true
+
+  - id: 20
+    name: rock20
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_20_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_20_normal.jpg
+    exists: true
+
+  - id: 2
+    name: rock21
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_21_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_21_normal.jpg
+    exists: true
+
+
+  - id: 17
+    name: rock17
+    specularColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    ambientColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    diffuseColor: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    emissionColor: {a: 1.0, r: 0.4, g: 0.4, b: 0.4}
+    shininess: 1
+    #tex_scale: 0.001020408
+    #transparency: 0.0001
+    bumpNorFac: 1.0
+    diffuseTexture: textures/rock_collection_3/rock_17_diffuse.jpg
+    normalTexture: textures/rock_collection_3/rock_17_normal.jpg
+    exists: true
