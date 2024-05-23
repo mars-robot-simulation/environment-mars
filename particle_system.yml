@@ -1,8 +1,8 @@
 particles:
   - materialName: stones
     textureName: particleMap
-    positionFile: ps3/particles.txt
-    #numRandomParticles: 88
+    #positionFile: ps3/particles.txt
+    numRandomParticles: 88
     seed: 258
     limits:
       alpha: 0.1

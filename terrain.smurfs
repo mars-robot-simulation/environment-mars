@@ -2,14 +2,14 @@ smurfs:
  ### Moon Surface
   - file: heightmap.yml
   - file: rocks.yml
-#  - file: stones.yml
-#  - file: rocks2.yml
+  - file: stones.yml
+  - file: rocks2.yml
 
 environment:
   skybox:
     path: mars_map
   terrain:
-    path: $AUTOPROJ_CURRENT_ROOT/models/environments/mars_hise
+    path: $AUTOPROJ_CURRENT_ROOT/models/environments/mars
     #mesh: global_mesh.obj
     #mesh_material: global_mesh
     #mesh_scale: 0.5
