@@ -8,8 +8,7 @@ nodelist:
     material_id: 1
     position: {x: 33.451, y: 25.33, z: -0.9632}
     movable: false
-    # scaled size in MARS
-    extend: {x: 8.55, y: 4.62, z: 3.47}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock16
     index: 16
@@ -20,8 +19,7 @@ nodelist:
     material_id: 16
     position: {x: 30.439, y: -1.426, z: -2.0454}
     movable: false
-    # scaled size in MARS
-    extend: {x: 5.98, y: 5.56, z: 2.6}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock18
     index: 18
@@ -32,8 +30,7 @@ nodelist:
     material_id: 18
     position: {x: 48.821, y: 4.4781, z: -0.9553}
     movable: false
-    # scaled size in MARS
-    extend: {x: 5.97, y: 4.09, z: 2.98}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock19
     index: 19
@@ -44,8 +41,7 @@ nodelist:
     material_id: 19
     position: {x: 42.368, y: 12.162, z: -1.4635}
     movable: false
-    # scaled size in MARS
-    extend: {x: 6.07, y: 5.44, z: 4.12}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock20
     index: 20
@@ -56,8 +52,7 @@ nodelist:
     material_id: 20
     position: {x: 48.74, y: -7.011, z: -0.39434}
     movable: false
-    # scaled size in MARS
-    extend: {x: 5.94, y: 5.04, z: 3.18}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock21
     index: 1
@@ -68,8 +63,8 @@ nodelist:
     material_id: 2
     position: {x: 27.584, y: 11.919, z: -1.0981}
     movable: false
-    # scaled size in MARS
-    extend: {x: 4.94, y: 4.18, z: 3.7}
+    scale: {x: 1, y: 1, z: 1}
+
   - name: rock17
     index: 1
     origname: rock17
@@ -79,8 +74,7 @@ nodelist:
     material_id: 17
     position: {x: 22.543, y: 3.4116, z: -0.55577}
     movable: false
-    # scaled size in MARS
-    extend: {x: 5.43, y: 3.6, z: 3.11}
+    scale: {x: 1, y: 1, z: 1}
 
 materiallist:
   - id: 1

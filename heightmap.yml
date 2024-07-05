@@ -3,7 +3,7 @@ nodelist:
     index: 1
     origname: terrain
     filename: terrain
-    physicmode: terrain
+    physicmode: heightfield
     movable: false
     material_id: 1
     shadow_id: 1
