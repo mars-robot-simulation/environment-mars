@@ -9,7 +9,7 @@ nodelist:
     position: {x: 38.477, y: -25.57, z: 1.3665}
     movable: false
     # scaled size in MARS
-    extend: {x: 37.3, y: 37.7, z: 9.74}
+    scale: {x: 1, y: 1, z: 1}
   - name: rock1
     index: 2
     origname: rock1
@@ -20,7 +20,7 @@ nodelist:
     position: {x: 32.34, y: -41.142, z: 5.2994}
     movable: false
     # scaled size in MARS
-    extend: {x: 45.9, y: 59.4, z: 17.3}
+    scale: {x: 1, y: 1, z: 1}
   - name: rock2
     index: 3
     origname: rock2
@@ -31,7 +31,7 @@ nodelist:
     position: {x: 79.009, y: -144.29, z: 7.1662}
     movable: false
     # scaled size in MARS
-    extend: {x: 62.9, y: 38.2, z: 16.9}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock3
     index: 4
@@ -43,7 +43,7 @@ nodelist:
     position: {x: -5.6932, y: 171.4, z: 16.535}
     movable: false
     # scaled size in MARS
-    extend: {x: 79.9, y: 71.5, z: 22.5}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock4
     index: 5
@@ -55,7 +55,7 @@ nodelist:
     position: {x: -70.76, y: 155.79, z: 20.574}
     movable: false
     # scaled size in MARS
-    extend: {x: 89.9, y: 43.7, z: 23.9}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock5
     index: 6
@@ -67,7 +67,7 @@ nodelist:
     position: {x: -174.16, y: -252.67, z: 22.756}
     movable: false
     # scaled size in MARS
-    extend: {x: 276, y: 193, z: 56}
+    scale: {x: 1, y: 1, z: 1}
 
   - name: rock6
     index: 7
@@ -79,7 +79,7 @@ nodelist:
     position: {x: -297.34, y: -60.25, z: 22.756}
     movable: false
     # scaled size in MARS
-    extend: {x: 116, y: 285, z: 56}
+    scale: {x: 1, y: 1, z: 1}
 
 materiallist:
   - id: 1

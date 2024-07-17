@@ -4,12 +4,11 @@ nodelist:
     origname: rock_1
     filename: ps3/stone2.obj
     noPhysical: true
+    physicmode: mesh
     material_id: 1
     shadow_id: 1
     position: {x: 0.0, y: 0.0, z: 0.0}
-
-    # scaled size in MARS
-    extend: {x: 1000, y: 1000, z: 50}
+    scale: {x: 1, y: 1, z: 1}
 
 materiallist:
   - id: 1
