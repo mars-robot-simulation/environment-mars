@@ -28,7 +28,7 @@ versions:
             data: "data:\n  inputs:\n    skalar: 1\n    vector_b: vec2(500,500)\n"
           - name: math_vec31
             domain: SHADER
-            data: "data:\n  inputs:\n    vector_b: vec3(0,0,0)\n    vector_a: vec3(-0.5,-0.5,-0.5)\n    skalar: 2.0\n"
+            data: "data:\n  inputs:\n    vector_a: vec3(0,0,0)\n    vector_b: vec3(-0.5,-0.5,-0.5)\n    skalar: 2.0\n"
       nodes:
         - name: vertexOut
           alias: ""
@@ -115,6 +115,7 @@ versions:
             domain: SHADER
             version: v1
         - name: math_vec31
+          alias: ""
           model:
             name: math_vec3
             domain: SHADER
@@ -253,17 +254,6 @@ versions:
           name: shader::sample2D1_color_vec4_xyz1_v_in
           data: "ignore_for_sort: 0\ndomain: SOFTWARE\nweight: 1.000000\ndataType: vec4\ndecouple: true\nsmooth: true\n"
         - from:
-            name: shader::normalize_vec31
-            interface: vector
-            domain: SOFTWARE
-          to:
-            name: vertexOut
-            interface: normalVarying
-            domain: SOFTWARE
-          weight: 1.000000
-          name: shader::normalize_vec31_vector_vertexOut_normalVarying
-          data: "decouple: false\ndataType: vec3\nignore_for_sort: 0\nsmooth: true\nweight: 1.000000\ndomain: SOFTWARE\n"
-        - from:
             name: vec4_xy1
             interface: v_out
             domain: SOFTWARE
@@ -286,6 +276,17 @@ versions:
           name: worldPos_worldPos_vec4_xy1_v_in
           data: "decouple: false\ndataType: vec4\nignore_for_sort: 0\ndomain: SOFTWARE\nweight: 1.000000\nsmooth: true\n"
         - from:
+            name: math_vec31
+            interface: vector
+            domain: SOFTWARE
+          to:
+            name: shader::normalize_vec31
+            interface: vector_a
+            domain: SOFTWARE
+          weight: 1.000000
+          name: math_vec31_vector_shader::normalize_vec31_vector_a
+          data: "dataType: vec3\nsmooth: true\nweight: 1.000000\ndecouple: false\nignore_for_sort: 0\ndomain: SOFTWARE\n"
+        - from:
             name: vec4_xyz1
             interface: v_out
             domain: SOFTWARE
@@ -297,15 +298,15 @@ versions:
           name: vec4_xyz1_v_out_math_vec31_vector_a
           data: "dataType: vec3\nsmooth: true\nweight: 1.000000\ndecouple: false\nignore_for_sort: 0\ndomain: SOFTWARE\n"
         - from:
-            name: math_vec31
+            name: shader::normalize_vec31
             interface: vector
             domain: SOFTWARE
           to:
-            name: shader::normalize_vec31
-            interface: vector_a
+            name: vertexOut
+            interface: normalVarying
             domain: SOFTWARE
           weight: 1.000000
-          name: math_vec31_vector_shader::normalize_vec31_vector_a
+          name: shader::normalize_vec31_vector_vertexOut_normalVarying
           data: "dataType: vec3\nsmooth: true\nweight: 1.000000\ndecouple: false\nignore_for_sort: 0\ndomain: SOFTWARE\n"
     shaderData:
       data: "gui:\n  layouts:\n    vertex_layout:\n      shader::math_vec41:\n        x: -48\n        y: 949\n      shader::normalize_vec31:\n        x: 902\n        y: 660\n      shader::decompose_vec42:\n        x: 174\n        y: 868\n      vertexOut:\n        y: 623\n        x: 1479\n      worldPos:\n        x: 1745\n        y: 515\n      viewPos:\n        y: 328\n        x: 1172\n      shader::sample2D1:\n        y: 925\n        x: 1809\n      shader::compose_vec21:\n        x: 1259\n        y: 1125\n      shader::compose_vec31:\n        y: 776\n        x: 649\n      texScale:\n        x: 1362\n        y: 909\n      view:\n        x: -3053.82\n        y: -1006.24\n        scale: 2.54584\n      normalMap:\n        y: 779\n        x: 1550\n      shader::terrain_map1:\n        y: 418\n        x: 854\n      shader::math_vec21:\n        x: 1538\n        y: 1021\n      shader::decompose_vec41:\n        x: 687\n        y: 1167\n      pixellight:\n        x: 2337\n        y: 268\n      normalmap_vert1:\n        y: 758\n        x: 1166\n    frag_layout:\n      vertexOut:\n        x: 1393\n        y: 557\n      worldPos:\n        x: 1745\n        y: 515\n      pixellight:\n        x: 1989\n        y: 396\n      shader::sample2D1:\n        x: 1954\n        y: 930\n      normalMap:\n        x: 1688\n        y: 856\n      shader::decompose_vec41:\n        x: 687\n        y: 1167\n      shader::compose_vec21:\n        x: 1321\n        y: 1127\n      texScale:\n        x: 1372\n        y: 988\n      shader::math_vec21:\n        x: 1714\n        y: 1132\n      shader::decompose_vec42:\n        x: 174\n        y: 868\n      shader::compose_vec31:\n        x: 649\n        y: 776\n      shader::math_vec41:\n        x: -30\n        y: 994\n      shader::normalize_vec31:\n        x: 902\n        y: 660\n      normalmap_vert1:\n        x: 1166\n        y: 758\n      math_float1:\n        x: 1029\n        y: 1286\n      terrain_map_scaled1:\n        x: 867\n        y: 274\n      viewPos2:\n        x: 1166\n        y: 176\n      shadow_vert1:\n        x: 1508\n        y: 107\n      view:\n        scale: 2.00187\n        x: -2517.95\n        y: -906.674\n  defaultLayout: frag_layout\n"
@@ -315,5 +316,5 @@ versions:
     interfaces:
       []
     Data:
-      data: "gui:\n  defaultLayout: frag_layout\n  layouts:\n    frag_layout:\n      vertexOut:\n        x: 1659.000000\n        y: 701.000000\n      worldPos:\n        x: 1805.000000\n        y: 607.000000\n      pixellight:\n        x: 1992.000000\n        y: 542.000000\n      shader::sample2D1:\n        x: 2483.000000\n        y: 566.000000\n      normalMap:\n        x: 2215.000000\n        y: 492.000000\n      texScale:\n        x: 2073.000000\n        y: 670.000000\n      shader::math_vec21:\n        x: 2240.000000\n        y: 768.000000\n      shader::normalize_vec31:\n        x: 1366.000000\n        y: 706.000000\n      normalmap_vert1:\n        x: 1630.000000\n        y: 823.000000\n      terrain_map_scaled1:\n        x: 1179.000000\n        y: 584.000000\n      viewPos2:\n        x: 1434.000000\n        y: 493.000000\n      shadow_vert1:\n        x: 1751.000000\n        y: 392.000000\n      vec4_xyz1:\n        x: 1054.000000\n        y: 775.000000\n      vec4_xy1:\n        x: 2084.000000\n        y: 782.000000\n      math_vec31:\n        x: 1189.000000\n        y: 797.000000\n      view:\n        scale: 2.001408\n        x: -2761.028687\n        y: -859.254700\n    vertex_layout:\n      shader::terrain_map1:\n        y: 418\n        x: 854\n      shader::sample2D1:\n        y: 925\n        x: 1809\n      shader::compose_vec21:\n        x: 1259\n        y: 1125\n      pixellight:\n        x: 2337\n        y: 268\n      shader::math_vec41:\n        y: 949\n        x: -48\n      viewPos:\n        x: 1172\n        y: 328\n      shader::math_vec21:\n        x: 1538\n        y: 1021\n      vertexOut:\n        y: 623\n        x: 1479\n      shader::normalize_vec31:\n        y: 660\n        x: 902\n      worldPos:\n        x: 1745\n        y: 515\n      shader::compose_vec31:\n        x: 649\n        y: 776\n      normalMap:\n        y: 779\n        x: 1550\n      view:\n        scale: 2.54584\n        x: -3053.82\n        y: -1006.24\n      texScale:\n        y: 909\n        x: 1362\n      shader::decompose_vec41:\n        x: 687\n        y: 1167\n      normalmap_vert1:\n        y: 758\n        x: 1166\n      shader::decompose_vec42:\n        x: 174\n        y: 868\n"
+      data: "gui:\n  defaultLayout: frag_layout\n  layouts:\n    frag_layout:\n      vertexOut:\n        x: 1659.000000\n        y: 701.000000\n      worldPos:\n        x: 1805.000000\n        y: 607.000000\n      pixellight:\n        x: 1992.000000\n        y: 542.000000\n      shader::sample2D1:\n        x: 2483.000000\n        y: 566.000000\n      normalMap:\n        x: 2215.000000\n        y: 492.000000\n      texScale:\n        x: 2073.000000\n        y: 670.000000\n      shader::math_vec21:\n        x: 2240.000000\n        y: 768.000000\n      shader::normalize_vec31:\n        x: 1366.000000\n        y: 706.000000\n      normalmap_vert1:\n        x: 1630.000000\n        y: 823.000000\n      terrain_map_scaled1:\n        x: 1179.000000\n        y: 584.000000\n      viewPos2:\n        x: 1434.000000\n        y: 493.000000\n      shadow_vert1:\n        x: 1751.000000\n        y: 392.000000\n      vec4_xyz1:\n        x: 1054.000000\n        y: 775.000000\n      vec4_xy1:\n        x: 2084.000000\n        y: 782.000000\n      math_vec31:\n        x: 1189.000000\n        y: 797.000000\n      view:\n        scale: 3.020276\n        x: -4829.298096\n        y: -1526.815186\n    vertex_layout:\n      shader::terrain_map1:\n        y: 418\n        x: 854\n      shader::sample2D1:\n        y: 925\n        x: 1809\n      shader::compose_vec21:\n        x: 1259\n        y: 1125\n      pixellight:\n        x: 2337\n        y: 268\n      shader::math_vec41:\n        y: 949\n        x: -48\n      viewPos:\n        x: 1172\n        y: 328\n      shader::math_vec21:\n        x: 1538\n        y: 1021\n      vertexOut:\n        y: 623\n        x: 1479\n      shader::normalize_vec31:\n        y: 660\n        x: 902\n      worldPos:\n        x: 1745\n        y: 515\n      shader::compose_vec31:\n        x: 649\n        y: 776\n      normalMap:\n        y: 779\n        x: 1550\n      view:\n        scale: 2.54584\n        x: -3053.82\n        y: -1006.24\n      texScale:\n        y: 909\n        x: 1362\n      shader::decompose_vec41:\n        x: 687\n        y: 1167\n      normalmap_vert1:\n        y: 758\n        x: 1166\n      shader::decompose_vec42:\n        x: 174\n        y: 868\n"
 type: vertex
