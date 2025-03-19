@@ -28,12 +28,12 @@ materiallist:
     instancing: true
     numInstances: 88
     renderBin: 2
-    instancesWidth: 1000
+    instancesWidth: 980
     instancesHeight: 44.8
-    instancesLength: 1000
+    instancesLength: 980
     particle_16bit: true
     textures:
-      - {name: terrainMap, file: textures/heightmap.png, unit: 0}
+      - {name: terrainMap, file: textures/heightmap_half.png, unit: 0}
       - {name: diffuseMap, file: ps3/stone_diffuse.jpg, unit: 9, filter=0}
       - {name: normalMap, file: ps3/stone_normal.jpg, unit: 8}
       - {name: particleMap, file: ps3/particle.png, unit: 10}

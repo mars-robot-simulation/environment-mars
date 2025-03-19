@@ -3,11 +3,12 @@ particles:
     textureName: particleMap
     positionFile: ps3/particles.txt
     positionFileD: 8
-    #numRandomParticles: 88
+    numRandomParticles: 88
+    debugCollisions: true
     seed: 258
     limits:
-      alpha: 0.1
-      beta: 0.1
+      alpha: 1.0
+      beta: 1.0
       gamma: 1.0
       scale: 0.5
     physics:

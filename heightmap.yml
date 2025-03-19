@@ -9,7 +9,7 @@ nodelist:
     shadow_id: 1
     position: {x: 0, y: 0, z: -6.1114}
     extend: {x: 1000, y: 1000, z: 44.8}
-    t_srcname: textures/heightmap.png
+    t_srcname: textures/heightmap_half.png
     t_tex_scale: 0.001
     t_width: 1000.0
     t_height: 1000.0
@@ -37,7 +37,7 @@ materiallist:
     #printShader: true
     textures:
 
-      - {file: textures/heightmap.png, name: terrainMap, unit: 5}
+      - {file: textures/heightmap_half.png, name: terrainMap, unit: 5}
       - {file: textures/Ground029_2K-JPG_Color_mars.jpg, name: diffuseMap, unit: 6}
       - {file: textures/Ground054_2K-JPG_Color_mars.jpg, name: sandDiffuse, unit: 8}#, filter: 2}
       - {file: textures/sand_drawing.png, name: sandMask, unit: 9}
