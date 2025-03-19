@@ -4,7 +4,7 @@ particles:
     positionFile: ps3/particles.txt
     positionFileD: 8
     numRandomParticles: 88
-    debugCollisions: true
+    #debugCollisions: true
     seed: 258
     limits:
       alpha: 1.0
