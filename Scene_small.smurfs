@@ -1,0 +1,2 @@
+entities:
+- {file: terrain_small.smurfs, name: terrain}

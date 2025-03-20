@@ -1,0 +1,28 @@
+smurfs:
+ ### Moon Surface
+  - file: heightmap_small.yml
+    name: terrain
+  - file: rocks.yml
+  - file: stones.yml
+  - file: rocks2.yml
+
+environment:
+  skybox:
+    path: mars_map
+  terrain:
+    path: $AUTOPROJ_CURRENT_ROOT/models/environments/mars
+    #mesh: global_mesh.obj
+    #mesh_material: global_mesh
+    #mesh_scale: 0.5
+physics:
+  gravity:
+    x: 0
+    y: 0
+    z: -9.81
+  ode:
+    cfm: 1e-5
+    erp: 0.8
+
+plugins:
+  - mars_particle_system
+  - mars_skydome

@@ -1,0 +1,76 @@
+nodelist:
+  - name: heightmap
+    index: 1
+    origname: terrain
+    filename: terrain
+    physicmode: heightfield
+    movable: false
+    material_id: 1
+    shadow_id: 1
+    position: {x: 0, y: 0, z: -6.1114}
+    extend: {x: 250, y: 250, z: 44.8}
+    t_srcname: textures/heightmap_small.png
+    t_tex_scale: 0.004
+    t_width: 250.0
+    t_height: 250.0
+    t_scale: 44.8
+#    t_grid: meshes/bobj/ground.bobj
+#    coll_bitmask: 31775
+    shadowcaster: false
+    plugins:
+      - plugin_lib_name: imprint_plugin
+        seed: 0
+        collideName: terrain.heightmap_visual
+        surfaceType: 0
+        surfaceTexture: textures/sand_drawing_small.png
+        scaleX: 250.0
+        scaleY: 250.0
+
+materiallist:
+  - name: terrain
+    id: 1
+    ambientColor: {a: 1.0, r: 0.05, g: 0.05, b: 0.05}
+    diffuseColor: {r: 1.0, g: 1.0, b: 1.0, a: 1}
+    specularColor: {a: 1.0, r: 0.2, g: 0.2, b: 0.2}
+    emissionColor: {a: 1.0, r: 0.0, g: 0.0, b: 0.0}
+    shininess: 1.0
+    bumpNorFac: 0.60
+    #envMapSpecular: {r: 0.4, g: 0.0, b: 0.0}
+    #envMapScale: {r: 450, g: 150, b: 150.0}
+    tex_scale: 0.004
+    transparency: 0.0001
+    scaleZ: 44.8
+    useWorldTexCoords: true
+    #printShader: true
+    textures:
+
+      - {file: textures/heightmap_small.png, name: terrainMap, unit: 5}
+      - {file: textures/Ground029_2K-JPG_Color_mars.jpg, name: diffuseMap, unit: 6}
+      - {file: textures/Ground054_2K-JPG_Color_mars.jpg, name: sandDiffuse, unit: 8}#, filter: 2}
+      - {file: textures/sand_drawing_small.png, name: sandMask, unit: 9}
+      - {file: textures/Ground054_2K-JPG_NormalGL.jpg, name: sandNormal, unit: 10}
+      - {file: textures/Gravel_001_BaseColor_red.jpg, name: gravelDiffuse, unit: 11}
+      - {file: textures/Gravel_001_Normal.jpg, name: gravelNormal, unit: 13}
+      - {file: textures/normalmap_small.png, name: normalMap, unit: 12}
+
+    shader:
+     provider: DRockGraph
+     vertex: shader/heightmap_small_vertex_shader.yml
+     fragment: shader/heightmap_small_fragment_shader.yml
+
+
+
+lightlist:
+  - name: sun
+    position: {x: 0.0, y: 2.0, z: 4.0}
+    diffuse: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    ambient: {a: 1.0, r: 0.15, g: 0.15, b: 0.15}
+    specular: {a: 1.0, r: 1.0, g: 1.0, b: 1.0}
+    constantAttenuation: 1.0
+    linearAttenuation: 0.0
+    quadraticAttenuation: 0.00002
+    directional: true
+    type: 1
+    angle: 0
+    exponent: 0
+    produceShadow: true
