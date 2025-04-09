@@ -9,6 +9,8 @@ nodelist:
     shadow_id: 1
     position: {x: 0, y: 0, z: -6.1114}
     extend: {x: 250, y: 250, z: 44.8}
+    ccfm: 0.001
+    cerp: 0.2
     t_srcname: textures/heightmap_small.png
     t_tex_scale: 0.004
     t_width: 250.0
