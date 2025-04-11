@@ -24,7 +24,7 @@ nodelist:
         seed: 0
         collideName: terrain.heightmap_visual
         surfaceType: 0
-        surfaceTexture: textures/sand_drawing_small.png
+        surfaceTexture: textures/sand_drawing_small2.png
         scaleX: 250.0
         scaleY: 250.0
 
@@ -46,10 +46,10 @@ materiallist:
     #printShader: true
     textures:
 
-      - {file: textures/heightmap_small.png, name: terrainMap, unit: 5}
+      #- {file: textures/heightmap_small.png, name: terrainMap, unit: 5}
       - {file: textures/Ground029_2K-JPG_Color_mars.jpg, name: diffuseMap, unit: 6}
       - {file: textures/Ground054_2K-JPG_Color_mars.jpg, name: sandDiffuse, unit: 8}#, filter: 2}
-      - {file: textures/sand_drawing_small.png, name: sandMask, unit: 9}
+      - {file: textures/sand_drawing_small2.png, name: sandMask, unit: 9}
       - {file: textures/Ground054_2K-JPG_NormalGL.jpg, name: sandNormal, unit: 10}
       - {file: textures/Gravel_001_BaseColor_red.jpg, name: gravelDiffuse, unit: 11}
       - {file: textures/Gravel_001_Normal.jpg, name: gravelNormal, unit: 13}
